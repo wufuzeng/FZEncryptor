@@ -1,0 +1,30 @@
+PODS:
+  - FZEncryptor (0.0.1):
+    - FZEncryptor/FZAESEncryptor (= 0.0.1)
+    - FZEncryptor/FZBASE64Encryptor (= 0.0.1)
+    - FZEncryptor/FZMD5Encryptor (= 0.0.1)
+    - FZEncryptor/FZPrivateKeyEncryptor (= 0.0.1)
+    - FZEncryptor/FZSHAEncryptor (= 0.0.1)
+    - FZEncryptor/FZURLEncryptor (= 0.0.1)
+  - FZEncryptor/FZAESEncryptor (0.0.1)
+  - FZEncryptor/FZBASE64Encryptor (0.0.1)
+  - FZEncryptor/FZMD5Encryptor (0.0.1)
+  - FZEncryptor/FZPrivateKeyEncryptor (0.0.1):
+    - FZEncryptor/FZBASE64Encryptor
+    - FZEncryptor/FZMD5Encryptor
+  - FZEncryptor/FZSHAEncryptor (0.0.1)
+  - FZEncryptor/FZURLEncryptor (0.0.1)
+
+DEPENDENCIES:
+  - FZEncryptor (from `../`)
+
+EXTERNAL SOURCES:
+  FZEncryptor:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  FZEncryptor: 8aee0a105a850ef8e29c04bb5fe5aac4bf28a883
+
+PODFILE CHECKSUM: 857470c608ad321bd99725b3afbf90c596f6704a
+
+COCOAPODS: 1.7.4

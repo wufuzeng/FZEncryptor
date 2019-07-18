@@ -8,6 +8,9 @@
 
 #import "FZViewController.h"
 
+
+
+#import <FZEncryptor.h>
 @interface FZViewController ()
 
 @end
@@ -18,6 +21,12 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    NSString *text_1 = [FZPrivateKeyEncryptor fz_encryptWithTxt:@"wufuzeng" andKey:@"123456"];
+    
+    NSString *text_2 = [FZPrivateKeyEncryptor fz_decryptWithTxt:text_1 andKey:@"123456"];
+    
+    NSLog(@"1:%@ 2:%@",text_1,text_2);
 }
 
 - (void)didReceiveMemoryWarning

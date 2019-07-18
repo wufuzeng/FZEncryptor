@@ -1,0 +1,869 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0312FF9C32E2AC580E5D6820D2E25640 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */; };
+		1AFDC8EC08520712C4CD05B9D2A667DA /* FZURLEncryptor.h in Headers */ = {isa = PBXBuildFile; fileRef = 49E4DE6F85FEB942696352302CDA6814 /* FZURLEncryptor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1FEC97334FD1760F41D90F71A985EA06 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */; };
+		28FBFCADA23367052FE5F2718437FFCB /* FZPrivateKeyEncryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = AAAE09E1D365D9109D32E43CD172CDC4 /* FZPrivateKeyEncryptor.m */; };
+		2B58C55B31796F061CFF9C4F899AACBF /* Pods-FZEncryptor_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E572D2E44B393E9D8F23FD42C2B70B89 /* Pods-FZEncryptor_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2DA34159DDA9D662CFFE179D79E4D0FA /* FZSHAEncryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = FEFBDBB10826FE5F8734FDA8461CC96A /* FZSHAEncryptor.m */; };
+		3AC8E5CA1981CE2E1390EB8CB8639553 /* FZSHAEncryptor.h in Headers */ = {isa = PBXBuildFile; fileRef = 17008E43EA1537745E30FEF92BE59B14 /* FZSHAEncryptor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3DB76A7C540820A8EE0DF73B9C7F1A2D /* FZMD5Encryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E02AF03AAE267FD570A3750FE4F9AFF /* FZMD5Encryptor.m */; };
+		41FF1802C15725CA2ABD0A9E2E32E3F4 /* FZMD5Encryptor.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F71C00FA6EA39E08990D587311659FF /* FZMD5Encryptor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		441A10D8A80E74176329DCEACCC39709 /* FZEncryptor-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5336106059C2DCCDAC757DE29F358677 /* FZEncryptor-dummy.m */; };
+		579BC6ED4286399AC65D6E71A56E23D9 /* FZPrivateKeyEncryptor.h in Headers */ = {isa = PBXBuildFile; fileRef = 48E8C59ECCCA753237B20920939AECB6 /* FZPrivateKeyEncryptor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6B006EB6D668AA41D95F008FDD6DF151 /* FZURLEncryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = A0EF3C4E1250FE28219AD6491E79EFE1 /* FZURLEncryptor.m */; };
+		800587A4420F51E326649A01CEC7742D /* FZBASE64Encryptor.h in Headers */ = {isa = PBXBuildFile; fileRef = 0FD7CD19B8EA0C0E34788697D7830325 /* FZBASE64Encryptor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8562BFCDED13065C8F7D5FD1498E5BBF /* Pods-FZEncryptor_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5134C5336983D133DEDA6D019B94D255 /* Pods-FZEncryptor_Tests-dummy.m */; };
+		9BE5A9F05D963AF1A64B58F4F35C7037 /* FZBASE64Encryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B768112CC46FB03C7E65540005C142A /* FZBASE64Encryptor.m */; };
+		A8E22DEA071C2B8E866FC218B2347985 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 312B988EF117AE4DE76A268D970131FE /* UIKit.framework */; };
+		BFFAC3C8E1AA0D8E9AEC95EE411E181D /* FZEncryptor-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F49DEB8CAEC4DE0A7A456056D70DA14A /* FZEncryptor-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C3A8A320A361CA8AFC97CA4D31BB560E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */; };
+		C8192FF980C6F4723BB5D7DD65EE229B /* FZAESEncryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E3BBA231101F0AF3949B182FBA00C3D /* FZAESEncryptor.m */; };
+		D3556A1CA9E14202C306E44658E33D15 /* FZAESEncryptor.h in Headers */ = {isa = PBXBuildFile; fileRef = 8DFDB1297DAC33BCE9764AF3E63D995E /* FZAESEncryptor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E4443CFE715DA2457B046136C641CCBC /* FZEncryptor.h in Headers */ = {isa = PBXBuildFile; fileRef = 6AE15D011B0390C7370048476D83640D /* FZEncryptor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E498B38CD17162E1329C6554FE2AA2CC /* Pods-FZEncryptor_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E612433BF2005245D643C78DDC750D70 /* Pods-FZEncryptor_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EB1309B6F87A0595C47A1759382B99EC /* Pods-FZEncryptor_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DDC2B30354EC161B668119765A710AA /* Pods-FZEncryptor_Example-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3A7ED753C2A33C31D28812CA9B87479F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EBBB4E6FAB4D0B7C75E6E3B68384EE74;
+			remoteInfo = FZEncryptor;
+		};
+		80CC3D7754DE8BE5300E402B0D8EE0BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C634B0F3B578A28CD8F0C1D7CA72F821;
+			remoteInfo = "Pods-FZEncryptor_Example";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		06A229574654E9008F2C04D36F7E4B23 /* FZEncryptor.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FZEncryptor.xcconfig; sourceTree = "<group>"; };
+		0CF1178AEBDF40BA794535059E6F5926 /* Pods-FZEncryptor_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FZEncryptor_Example.release.xcconfig"; sourceTree = "<group>"; };
+		0F71C00FA6EA39E08990D587311659FF /* FZMD5Encryptor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FZMD5Encryptor.h; path = FZEncryptor/Classes/FZMD5Encryptor/FZMD5Encryptor.h; sourceTree = "<group>"; };
+		0FD7CD19B8EA0C0E34788697D7830325 /* FZBASE64Encryptor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FZBASE64Encryptor.h; path = FZEncryptor/Classes/FZBASE64Encryptor/FZBASE64Encryptor.h; sourceTree = "<group>"; };
+		17008E43EA1537745E30FEF92BE59B14 /* FZSHAEncryptor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FZSHAEncryptor.h; path = FZEncryptor/Classes/FZSHAEncryptor/FZSHAEncryptor.h; sourceTree = "<group>"; };
+		1DDC2B30354EC161B668119765A710AA /* Pods-FZEncryptor_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FZEncryptor_Example-dummy.m"; sourceTree = "<group>"; };
+		22908E0275BC712B6D9B1CD377363F61 /* FZEncryptor.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = FZEncryptor.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		2E3BBA231101F0AF3949B182FBA00C3D /* FZAESEncryptor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FZAESEncryptor.m; path = FZEncryptor/Classes/FZAESEncryptor/FZAESEncryptor.m; sourceTree = "<group>"; };
+		312B988EF117AE4DE76A268D970131FE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		3FB2FFADBE00DC7EC4A3B2C79AC0331E /* Pods-FZEncryptor_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-FZEncryptor_Example.modulemap"; sourceTree = "<group>"; };
+		436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		44014FF715F39C18EE7B3B92002E40C4 /* Pods-FZEncryptor_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FZEncryptor_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		48E8C59ECCCA753237B20920939AECB6 /* FZPrivateKeyEncryptor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FZPrivateKeyEncryptor.h; path = FZEncryptor/Classes/FZPrivateKeyEncryptor/FZPrivateKeyEncryptor.h; sourceTree = "<group>"; };
+		49E4DE6F85FEB942696352302CDA6814 /* FZURLEncryptor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FZURLEncryptor.h; path = FZEncryptor/Classes/FZURLEncryptor/FZURLEncryptor.h; sourceTree = "<group>"; };
+		4AF243989D2F454F5BE62E98800E4110 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		4B768112CC46FB03C7E65540005C142A /* FZBASE64Encryptor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FZBASE64Encryptor.m; path = FZEncryptor/Classes/FZBASE64Encryptor/FZBASE64Encryptor.m; sourceTree = "<group>"; };
+		5134C5336983D133DEDA6D019B94D255 /* Pods-FZEncryptor_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FZEncryptor_Tests-dummy.m"; sourceTree = "<group>"; };
+		5336106059C2DCCDAC757DE29F358677 /* FZEncryptor-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FZEncryptor-dummy.m"; sourceTree = "<group>"; };
+		57512A96A6C48171D1351BFA313A58D1 /* Pods-FZEncryptor_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FZEncryptor_Example-frameworks.sh"; sourceTree = "<group>"; };
+		5AB783F8D5812D3175B910509F79FD49 /* Pods-FZEncryptor_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FZEncryptor_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		5E02AF03AAE267FD570A3750FE4F9AFF /* FZMD5Encryptor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FZMD5Encryptor.m; path = FZEncryptor/Classes/FZMD5Encryptor/FZMD5Encryptor.m; sourceTree = "<group>"; };
+		6988C19DEF120320250352CCEE0D7F4A /* FZEncryptor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FZEncryptor.framework; path = FZEncryptor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A75F3024E76FA8BF336A4617AA9C570 /* Pods-FZEncryptor_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FZEncryptor_Tests-Info.plist"; sourceTree = "<group>"; };
+		6AE15D011B0390C7370048476D83640D /* FZEncryptor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FZEncryptor.h; path = FZEncryptor/Classes/FZEncryptor.h; sourceTree = "<group>"; };
+		8A6FEDF2E34E54359A819FAB2CA7240B /* Pods_FZEncryptor_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_FZEncryptor_Example.framework; path = "Pods-FZEncryptor_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8DFDB1297DAC33BCE9764AF3E63D995E /* FZAESEncryptor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FZAESEncryptor.h; path = FZEncryptor/Classes/FZAESEncryptor/FZAESEncryptor.h; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9E09A94805C7323892883EFF62F1C810 /* Pods-FZEncryptor_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FZEncryptor_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		A0EF3C4E1250FE28219AD6491E79EFE1 /* FZURLEncryptor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FZURLEncryptor.m; path = FZEncryptor/Classes/FZURLEncryptor/FZURLEncryptor.m; sourceTree = "<group>"; };
+		A4D9D2084C88F91D2DF0AB02C0E3BD40 /* FZEncryptor.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FZEncryptor.modulemap; sourceTree = "<group>"; };
+		AAAE09E1D365D9109D32E43CD172CDC4 /* FZPrivateKeyEncryptor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FZPrivateKeyEncryptor.m; path = FZEncryptor/Classes/FZPrivateKeyEncryptor/FZPrivateKeyEncryptor.m; sourceTree = "<group>"; };
+		AFCF9DFBD54D7CE2D9DFBDBB52FA4F5A /* Pods_FZEncryptor_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_FZEncryptor_Tests.framework; path = "Pods-FZEncryptor_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0B6EA7A9B669B895005F6ED7F07C75F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		B4E323F46D8E9F8641F651E3C38FA5D7 /* Pods-FZEncryptor_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-FZEncryptor_Tests.modulemap"; sourceTree = "<group>"; };
+		D3F0CB0C01F4AC257433972EAA366A5D /* FZEncryptor-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FZEncryptor-prefix.pch"; sourceTree = "<group>"; };
+		E248CA673E07E920B0886F269A53B17B /* Pods-FZEncryptor_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FZEncryptor_Example-Info.plist"; sourceTree = "<group>"; };
+		E572D2E44B393E9D8F23FD42C2B70B89 /* Pods-FZEncryptor_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FZEncryptor_Example-umbrella.h"; sourceTree = "<group>"; };
+		E612433BF2005245D643C78DDC750D70 /* Pods-FZEncryptor_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FZEncryptor_Tests-umbrella.h"; sourceTree = "<group>"; };
+		E660223B724E91C240BE05B0B9144945 /* Pods-FZEncryptor_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FZEncryptor_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F0F35953ABE430FE771333127CCAEE1A /* Pods-FZEncryptor_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FZEncryptor_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		F1268D4F95DFEF99B4DF1F9C64737A8B /* Pods-FZEncryptor_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FZEncryptor_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		F3133606DB5C4B3BF0C60CED2175CF41 /* FZEncryptor-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FZEncryptor-Info.plist"; sourceTree = "<group>"; };
+		F49DEB8CAEC4DE0A7A456056D70DA14A /* FZEncryptor-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FZEncryptor-umbrella.h"; sourceTree = "<group>"; };
+		F800410F420DEF9FB345CD9C9C563C13 /* Pods-FZEncryptor_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FZEncryptor_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		FEFBDBB10826FE5F8734FDA8461CC96A /* FZSHAEncryptor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FZSHAEncryptor.m; path = FZEncryptor/Classes/FZSHAEncryptor/FZSHAEncryptor.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		009B0EF240961AAAACC619674FCD8AB2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FEC97334FD1760F41D90F71A985EA06 /* Foundation.framework in Frameworks */,
+				A8E22DEA071C2B8E866FC218B2347985 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F53A71684041CF043E4BA3F04DE4AB0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3A8A320A361CA8AFC97CA4D31BB560E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		86A347DDE43BC02122C978164A829AFA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0312FF9C32E2AC580E5D6820D2E25640 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		026967636082FF8D22A0061306611210 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CB672275BACF92E63016A7E31A376604 /* FZEncryptor */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		051D106212B62B27CE4669B657F8F196 /* FZURLEncryptor */ = {
+			isa = PBXGroup;
+			children = (
+				49E4DE6F85FEB942696352302CDA6814 /* FZURLEncryptor.h */,
+				A0EF3C4E1250FE28219AD6491E79EFE1 /* FZURLEncryptor.m */,
+			);
+			name = FZURLEncryptor;
+			sourceTree = "<group>";
+		};
+		1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E2983683FD097A93297E2F5D4E382B36 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1FC832BCF49229B9B0D9165C2FD3EC1C /* Pods-FZEncryptor_Example */ = {
+			isa = PBXGroup;
+			children = (
+				3FB2FFADBE00DC7EC4A3B2C79AC0331E /* Pods-FZEncryptor_Example.modulemap */,
+				E660223B724E91C240BE05B0B9144945 /* Pods-FZEncryptor_Example-acknowledgements.markdown */,
+				44014FF715F39C18EE7B3B92002E40C4 /* Pods-FZEncryptor_Example-acknowledgements.plist */,
+				1DDC2B30354EC161B668119765A710AA /* Pods-FZEncryptor_Example-dummy.m */,
+				57512A96A6C48171D1351BFA313A58D1 /* Pods-FZEncryptor_Example-frameworks.sh */,
+				E248CA673E07E920B0886F269A53B17B /* Pods-FZEncryptor_Example-Info.plist */,
+				E572D2E44B393E9D8F23FD42C2B70B89 /* Pods-FZEncryptor_Example-umbrella.h */,
+				F800410F420DEF9FB345CD9C9C563C13 /* Pods-FZEncryptor_Example.debug.xcconfig */,
+				0CF1178AEBDF40BA794535059E6F5926 /* Pods-FZEncryptor_Example.release.xcconfig */,
+			);
+			name = "Pods-FZEncryptor_Example";
+			path = "Target Support Files/Pods-FZEncryptor_Example";
+			sourceTree = "<group>";
+		};
+		2A5F317E1E8D16C15B6C24CE8DA195DA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6988C19DEF120320250352CCEE0D7F4A /* FZEncryptor.framework */,
+				8A6FEDF2E34E54359A819FAB2CA7240B /* Pods_FZEncryptor_Example.framework */,
+				AFCF9DFBD54D7CE2D9DFBDBB52FA4F5A /* Pods_FZEncryptor_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		42032FB73B7B303DC41E38F4947B94AA /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				22908E0275BC712B6D9B1CD377363F61 /* FZEncryptor.podspec */,
+				B0B6EA7A9B669B895005F6ED7F07C75F /* LICENSE */,
+				4AF243989D2F454F5BE62E98800E4110 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		442519012EC77C9297E1E1C2B3015D68 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A4D9D2084C88F91D2DF0AB02C0E3BD40 /* FZEncryptor.modulemap */,
+				06A229574654E9008F2C04D36F7E4B23 /* FZEncryptor.xcconfig */,
+				5336106059C2DCCDAC757DE29F358677 /* FZEncryptor-dummy.m */,
+				F3133606DB5C4B3BF0C60CED2175CF41 /* FZEncryptor-Info.plist */,
+				D3F0CB0C01F4AC257433972EAA366A5D /* FZEncryptor-prefix.pch */,
+				F49DEB8CAEC4DE0A7A456056D70DA14A /* FZEncryptor-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/FZEncryptor";
+			sourceTree = "<group>";
+		};
+		483A815D9F4740AFA1D110B411240523 /* Pods-FZEncryptor_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				B4E323F46D8E9F8641F651E3C38FA5D7 /* Pods-FZEncryptor_Tests.modulemap */,
+				9E09A94805C7323892883EFF62F1C810 /* Pods-FZEncryptor_Tests-acknowledgements.markdown */,
+				5AB783F8D5812D3175B910509F79FD49 /* Pods-FZEncryptor_Tests-acknowledgements.plist */,
+				5134C5336983D133DEDA6D019B94D255 /* Pods-FZEncryptor_Tests-dummy.m */,
+				6A75F3024E76FA8BF336A4617AA9C570 /* Pods-FZEncryptor_Tests-Info.plist */,
+				E612433BF2005245D643C78DDC750D70 /* Pods-FZEncryptor_Tests-umbrella.h */,
+				F0F35953ABE430FE771333127CCAEE1A /* Pods-FZEncryptor_Tests.debug.xcconfig */,
+				F1268D4F95DFEF99B4DF1F9C64737A8B /* Pods-FZEncryptor_Tests.release.xcconfig */,
+			);
+			name = "Pods-FZEncryptor_Tests";
+			path = "Target Support Files/Pods-FZEncryptor_Tests";
+			sourceTree = "<group>";
+		};
+		499FCA6A5A2BFD49A78DA924D8939BC0 /* FZSHAEncryptor */ = {
+			isa = PBXGroup;
+			children = (
+				17008E43EA1537745E30FEF92BE59B14 /* FZSHAEncryptor.h */,
+				FEFBDBB10826FE5F8734FDA8461CC96A /* FZSHAEncryptor.m */,
+			);
+			name = FZSHAEncryptor;
+			sourceTree = "<group>";
+		};
+		57B8821EC116A6B071AA55213E647BE9 /* FZPrivateKeyEncryptor */ = {
+			isa = PBXGroup;
+			children = (
+				48E8C59ECCCA753237B20920939AECB6 /* FZPrivateKeyEncryptor.h */,
+				AAAE09E1D365D9109D32E43CD172CDC4 /* FZPrivateKeyEncryptor.m */,
+			);
+			name = FZPrivateKeyEncryptor;
+			sourceTree = "<group>";
+		};
+		8417F64EEEE56AA225E3FD89368E80C4 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				1FC832BCF49229B9B0D9165C2FD3EC1C /* Pods-FZEncryptor_Example */,
+				483A815D9F4740AFA1D110B411240523 /* Pods-FZEncryptor_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		C83739BF49DE7DEED8007334217D089B /* FZAESEncryptor */ = {
+			isa = PBXGroup;
+			children = (
+				8DFDB1297DAC33BCE9764AF3E63D995E /* FZAESEncryptor.h */,
+				2E3BBA231101F0AF3949B182FBA00C3D /* FZAESEncryptor.m */,
+			);
+			name = FZAESEncryptor;
+			sourceTree = "<group>";
+		};
+		CB672275BACF92E63016A7E31A376604 /* FZEncryptor */ = {
+			isa = PBXGroup;
+			children = (
+				6AE15D011B0390C7370048476D83640D /* FZEncryptor.h */,
+				C83739BF49DE7DEED8007334217D089B /* FZAESEncryptor */,
+				F685D907F2E5CB84525EEB9CAC00A48C /* FZBASE64Encryptor */,
+				E64BABF5B11497DB85F1C8B9A173FF42 /* FZMD5Encryptor */,
+				57B8821EC116A6B071AA55213E647BE9 /* FZPrivateKeyEncryptor */,
+				499FCA6A5A2BFD49A78DA924D8939BC0 /* FZSHAEncryptor */,
+				051D106212B62B27CE4669B657F8F196 /* FZURLEncryptor */,
+				42032FB73B7B303DC41E38F4947B94AA /* Pod */,
+				442519012EC77C9297E1E1C2B3015D68 /* Support Files */,
+			);
+			name = FZEncryptor;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				026967636082FF8D22A0061306611210 /* Development Pods */,
+				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
+				2A5F317E1E8D16C15B6C24CE8DA195DA /* Products */,
+				8417F64EEEE56AA225E3FD89368E80C4 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		E2983683FD097A93297E2F5D4E382B36 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */,
+				312B988EF117AE4DE76A268D970131FE /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		E64BABF5B11497DB85F1C8B9A173FF42 /* FZMD5Encryptor */ = {
+			isa = PBXGroup;
+			children = (
+				0F71C00FA6EA39E08990D587311659FF /* FZMD5Encryptor.h */,
+				5E02AF03AAE267FD570A3750FE4F9AFF /* FZMD5Encryptor.m */,
+			);
+			name = FZMD5Encryptor;
+			sourceTree = "<group>";
+		};
+		F685D907F2E5CB84525EEB9CAC00A48C /* FZBASE64Encryptor */ = {
+			isa = PBXGroup;
+			children = (
+				0FD7CD19B8EA0C0E34788697D7830325 /* FZBASE64Encryptor.h */,
+				4B768112CC46FB03C7E65540005C142A /* FZBASE64Encryptor.m */,
+			);
+			name = FZBASE64Encryptor;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		12184038C6ACBBC1A187C17536D49FF4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E498B38CD17162E1329C6554FE2AA2CC /* Pods-FZEncryptor_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4EDCF42B06A9E668A40B52B19552A6DF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3556A1CA9E14202C306E44658E33D15 /* FZAESEncryptor.h in Headers */,
+				800587A4420F51E326649A01CEC7742D /* FZBASE64Encryptor.h in Headers */,
+				BFFAC3C8E1AA0D8E9AEC95EE411E181D /* FZEncryptor-umbrella.h in Headers */,
+				E4443CFE715DA2457B046136C641CCBC /* FZEncryptor.h in Headers */,
+				41FF1802C15725CA2ABD0A9E2E32E3F4 /* FZMD5Encryptor.h in Headers */,
+				579BC6ED4286399AC65D6E71A56E23D9 /* FZPrivateKeyEncryptor.h in Headers */,
+				3AC8E5CA1981CE2E1390EB8CB8639553 /* FZSHAEncryptor.h in Headers */,
+				1AFDC8EC08520712C4CD05B9D2A667DA /* FZURLEncryptor.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65EB09B74BB52671AD13B28240C0BAA2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B58C55B31796F061CFF9C4F899AACBF /* Pods-FZEncryptor_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		9A5AA5F73BB779ECC3BB66BF36DA5B9A /* Pods-FZEncryptor_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2E30352E673ED79C61CEB8137A76FC41 /* Build configuration list for PBXNativeTarget "Pods-FZEncryptor_Tests" */;
+			buildPhases = (
+				12184038C6ACBBC1A187C17536D49FF4 /* Headers */,
+				0A4173078416E02975A07DD8572F67BD /* Sources */,
+				5F53A71684041CF043E4BA3F04DE4AB0 /* Frameworks */,
+				D184E1D37B1E9DA99A533EEF17FD4FBB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DB0CEA25CB8D6C1BE6F063F6DC031FA6 /* PBXTargetDependency */,
+			);
+			name = "Pods-FZEncryptor_Tests";
+			productName = "Pods-FZEncryptor_Tests";
+			productReference = AFCF9DFBD54D7CE2D9DFBDBB52FA4F5A /* Pods_FZEncryptor_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C634B0F3B578A28CD8F0C1D7CA72F821 /* Pods-FZEncryptor_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 074052B412310FC7C35506F4C8B95C60 /* Build configuration list for PBXNativeTarget "Pods-FZEncryptor_Example" */;
+			buildPhases = (
+				65EB09B74BB52671AD13B28240C0BAA2 /* Headers */,
+				C875480A196516DA5B432B92B179095F /* Sources */,
+				86A347DDE43BC02122C978164A829AFA /* Frameworks */,
+				B234C92B1C2CE8FF593E0032C958A4A7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B88779882DE9333A62256731C2C91187 /* PBXTargetDependency */,
+			);
+			name = "Pods-FZEncryptor_Example";
+			productName = "Pods-FZEncryptor_Example";
+			productReference = 8A6FEDF2E34E54359A819FAB2CA7240B /* Pods_FZEncryptor_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		EBBB4E6FAB4D0B7C75E6E3B68384EE74 /* FZEncryptor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6FB2BC3BDD05A9651098CE021A5ADF8E /* Build configuration list for PBXNativeTarget "FZEncryptor" */;
+			buildPhases = (
+				4EDCF42B06A9E668A40B52B19552A6DF /* Headers */,
+				7896BC8333DC3CED0738B9770F861E66 /* Sources */,
+				009B0EF240961AAAACC619674FCD8AB2 /* Frameworks */,
+				6A10F76D11052F7A555DA74910CFE504 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FZEncryptor;
+			productName = FZEncryptor;
+			productReference = 6988C19DEF120320250352CCEE0D7F4A /* FZEncryptor.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 2A5F317E1E8D16C15B6C24CE8DA195DA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EBBB4E6FAB4D0B7C75E6E3B68384EE74 /* FZEncryptor */,
+				C634B0F3B578A28CD8F0C1D7CA72F821 /* Pods-FZEncryptor_Example */,
+				9A5AA5F73BB779ECC3BB66BF36DA5B9A /* Pods-FZEncryptor_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6A10F76D11052F7A555DA74910CFE504 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B234C92B1C2CE8FF593E0032C958A4A7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D184E1D37B1E9DA99A533EEF17FD4FBB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0A4173078416E02975A07DD8572F67BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8562BFCDED13065C8F7D5FD1498E5BBF /* Pods-FZEncryptor_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7896BC8333DC3CED0738B9770F861E66 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C8192FF980C6F4723BB5D7DD65EE229B /* FZAESEncryptor.m in Sources */,
+				9BE5A9F05D963AF1A64B58F4F35C7037 /* FZBASE64Encryptor.m in Sources */,
+				441A10D8A80E74176329DCEACCC39709 /* FZEncryptor-dummy.m in Sources */,
+				3DB76A7C540820A8EE0DF73B9C7F1A2D /* FZMD5Encryptor.m in Sources */,
+				28FBFCADA23367052FE5F2718437FFCB /* FZPrivateKeyEncryptor.m in Sources */,
+				2DA34159DDA9D662CFFE179D79E4D0FA /* FZSHAEncryptor.m in Sources */,
+				6B006EB6D668AA41D95F008FDD6DF151 /* FZURLEncryptor.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C875480A196516DA5B432B92B179095F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB1309B6F87A0595C47A1759382B99EC /* Pods-FZEncryptor_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B88779882DE9333A62256731C2C91187 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FZEncryptor;
+			target = EBBB4E6FAB4D0B7C75E6E3B68384EE74 /* FZEncryptor */;
+			targetProxy = 3A7ED753C2A33C31D28812CA9B87479F /* PBXContainerItemProxy */;
+		};
+		DB0CEA25CB8D6C1BE6F063F6DC031FA6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-FZEncryptor_Example";
+			target = C634B0F3B578A28CD8F0C1D7CA72F821 /* Pods-FZEncryptor_Example */;
+			targetProxy = 80CC3D7754DE8BE5300E402B0D8EE0BC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		02083008AEBC8B6E5DECA31DE35BC6C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 06A229574654E9008F2C04D36F7E4B23 /* FZEncryptor.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/FZEncryptor/FZEncryptor-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FZEncryptor/FZEncryptor-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FZEncryptor/FZEncryptor.modulemap";
+				PRODUCT_MODULE_NAME = FZEncryptor;
+				PRODUCT_NAME = FZEncryptor;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4BE66A09A74FD25164AAB3C2645B9B93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		7EF7227D9B20A1D549000096ACCB23D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		9A52CDADF6E2CCAE4518490913E66118 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 06A229574654E9008F2C04D36F7E4B23 /* FZEncryptor.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/FZEncryptor/FZEncryptor-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FZEncryptor/FZEncryptor-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FZEncryptor/FZEncryptor.modulemap";
+				PRODUCT_MODULE_NAME = FZEncryptor;
+				PRODUCT_NAME = FZEncryptor;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B6DDE4FF5AB50CDF0D3C6E929B26578C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F0F35953ABE430FE771333127CCAEE1A /* Pods-FZEncryptor_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-FZEncryptor_Tests/Pods-FZEncryptor_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-FZEncryptor_Tests/Pods-FZEncryptor_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		BC52EBED94BFD0A36DD7AA3983639FC7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0CF1178AEBDF40BA794535059E6F5926 /* Pods-FZEncryptor_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-FZEncryptor_Example/Pods-FZEncryptor_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-FZEncryptor_Example/Pods-FZEncryptor_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C6FA75E62029431E4C1527E518ACCB44 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F800410F420DEF9FB345CD9C9C563C13 /* Pods-FZEncryptor_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-FZEncryptor_Example/Pods-FZEncryptor_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-FZEncryptor_Example/Pods-FZEncryptor_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		FFC5CBED2AF69F25AC4ED4ECD2660A23 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F1268D4F95DFEF99B4DF1F9C64737A8B /* Pods-FZEncryptor_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-FZEncryptor_Tests/Pods-FZEncryptor_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-FZEncryptor_Tests/Pods-FZEncryptor_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		074052B412310FC7C35506F4C8B95C60 /* Build configuration list for PBXNativeTarget "Pods-FZEncryptor_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C6FA75E62029431E4C1527E518ACCB44 /* Debug */,
+				BC52EBED94BFD0A36DD7AA3983639FC7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2E30352E673ED79C61CEB8137A76FC41 /* Build configuration list for PBXNativeTarget "Pods-FZEncryptor_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6DDE4FF5AB50CDF0D3C6E929B26578C /* Debug */,
+				FFC5CBED2AF69F25AC4ED4ECD2660A23 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7EF7227D9B20A1D549000096ACCB23D7 /* Debug */,
+				4BE66A09A74FD25164AAB3C2645B9B93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6FB2BC3BDD05A9651098CE021A5ADF8E /* Build configuration list for PBXNativeTarget "FZEncryptor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A52CDADF6E2CCAE4518490913E66118 /* Debug */,
+				02083008AEBC8B6E5DECA31DE35BC6C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

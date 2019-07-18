@@ -1,0 +1,6 @@
+framework module FZEncryptor {
+  umbrella header "FZEncryptor-umbrella.h"
+
+  export *
+  module * { export * }
+}
